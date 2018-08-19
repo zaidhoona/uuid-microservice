@@ -1,0 +1,10 @@
+spring:
+  liquibase:
+    change-log: classpath:db/liquibase-changelog.yml
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:~/test
